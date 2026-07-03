@@ -1,0 +1,250 @@
+body{
+    background: radial-gradient(circle at top, #0b1220, #070b14);
+    color:#e5e7eb;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* Title */
+.title{
+    font-size:52px;
+    font-weight:900;
+    background: linear-gradient(90deg, #60a5fa, #38bdf8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle{
+    color:#94a3b8;
+    font-size:18px;
+}
+
+/* Cards */
+.search-card,
+.glass-card{
+    background: rgba(17, 24, 39, 0.85);
+    border:1px solid #1f2937;
+    border-radius:18px;
+    backdrop-filter: blur(10px);
+    transition: all .3s ease;
+}
+
+.glass-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0,0,0,.55);
+    border-color:#3b82f6;
+}
+
+/* Input */
+.form-control{
+    background:#0f172a;
+    border:1px solid #334155;
+    color:#fff;
+    border-radius:12px;
+    padding:12px;
+}
+
+.form-control::placeholder{
+    color:#94a3b8;
+}
+
+.form-control:focus{
+    background:#0f172a;
+    color:#fff;
+    border-color:#3b82f6;
+    box-shadow:0 0 20px rgba(59,130,246,.4);
+}
+
+/* Buttons */
+.btn-primary{
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border:none;
+    height:52px;
+    font-size:18px;
+    font-weight:600;
+    border-radius:12px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover{
+    transform: scale(1.03);
+    box-shadow:0 10px 25px rgba(37,99,235,.4);
+}
+
+/* Clear History Button Style */
+.btn-danger.btn-sm {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-danger.btn-sm:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}
+
+
+.btn-delete-item {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #94a3b8;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.btn-delete-item:hover {
+    color: #ef4444; 
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 5px rgba(239, 68, 68, 0.6)); /* Glow Effect */
+}
+
+/* Info */
+.info p{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    padding:12px 0;
+    border-bottom:1px solid #273449;
+    color:#f8fafc;
+    font-size:15px;
+}
+
+.info p:last-child{
+    border-bottom:none;
+}
+
+.info span{
+    color:#38bdf8;
+    font-weight:700;
+    min-width:160px;
+}
+
+/* Progress */
+.progress{
+    height:22px;
+    background:#1e293b;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    font-size:12px;
+    font-weight:700;
+    color:white;
+}
+
+/* Badge */
+.badge{
+    padding:10px 16px;
+    border-radius:12px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+/* Horizontal line */
+hr{
+    border-color:#273449;
+    opacity:0.6;
+}
+
+/* Card Title */
+.card h4{
+    font-weight:800;
+    letter-spacing:0.5px;
+}
+
+/* Chart */
+canvas{
+    margin-top:20px;
+}
+
+/* Extra glow effect */
+.glass-card h4 i{
+    margin-right:8px;
+}
+
+/* Table */
+.table{
+    margin-top:15px;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.table thead{
+    background:#1e3a8a;
+}
+
+.table table thead th{
+    color:white;
+    border:none;
+}
+
+.table td{
+    vertical-align:middle;
+    border-color:#273449;
+}
+
+.table-hover tbody tr:hover{
+    background:#1f2937;
+}
+
+.table-responsive{
+    border-radius:12px;
+}
+
+.chart-box{
+    height: 260px;
+    position: relative;
+    width:100%;
+    margin-top:20px;
+}
+
+/* Badge Glow Effects */
+.badge.bg-danger {
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+.badge.bg-warning {
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.badge.bg-success {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+/* Error Alert Glow Style */
+.alert-danger {
+    background: rgba(239, 68, 68, 0.1) !important;
+    border: 1px solid rgba(239, 68, 68, 0.4) !important;
+    color: #fca5a5 !important;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.15);
+}
+
+.text-center h2{
+    font-size:42px;
+    font-weight:800;
+}
+
+.text-center p{
+    color:#94a3b8;
+    margin-bottom:0;
+    font-size:16px;
+}
+
+#map {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: 2px solid #273449;
+    overflow: hidden;
+    z-index: 1;
+}

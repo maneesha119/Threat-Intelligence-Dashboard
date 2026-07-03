@@ -3,4 +3,5 @@ __pycache__/
 threat_dashboard.db
 reports/
 venv/
+.venv/
 .env

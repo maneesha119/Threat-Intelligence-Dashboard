@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+threat_dashboard.db
+reports/
+venv/
+.env
